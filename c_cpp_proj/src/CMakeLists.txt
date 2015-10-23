@@ -1,5 +1,5 @@
 # Set the name of the binary we're compiling
-set(TARGET_NAME GameHomework)
+set(TARGET_NAME foobar)
 
 # Add all source file names to an array for later use. You can use GLOB if
 # you're feeling lazy, but it's considered better practice to list all of your
