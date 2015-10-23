@@ -21,6 +21,7 @@ elseif (${CMAKE_CXX_COMPILER_ID} STREQUAL "MSVC")
     endif()
 endif()
 
+# Use find_package to load CMake modules for locating external libraries.
 find_package(foo REQUIRED)
 
 # message is great for printing variables when debugging
