@@ -36,3 +36,8 @@ target_include_directories(${TARGET_NAME}
 # be compiled with and CMake is smart enough to make the association and link
 # your libraries properly.
 target_link_libraries(${TARGET_NAME} "${FOO_LIBRARY}" ${BAR_LIBRARIES})
+
+# When install is used (make install or the INSTALL solution in VS) copy the
+# binary to the folder TARGET_FOLDER. Note that the location of MyModule is
+# determined by the CMAKE_INSTALL_PREFIX variable.
+install (TARGETS ${TARGET_NAME} DESTINATION TARGET_FOLDER)
