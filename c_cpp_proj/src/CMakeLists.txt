@@ -24,7 +24,7 @@ add_executable(${TARGET_NAME} ${SRC_FILES})
 # locations or you're on Windows. CMAKE_SOURCE_DIR refers to the root of your
 # project, and it should also be noted that you should not surround list names
 # with double quotes since it causes problems when dereferencing it.
-target_include_directories(${TARGET_NAME}
+target_include_directories(${TARGET_NAME} PRIVATE
                           ${BAR_INCLUDE_DIRS}
                           "${CMAKE_SOURCE_DIR}/include"
                           "${FOO_INCLUDE_DIR}"
