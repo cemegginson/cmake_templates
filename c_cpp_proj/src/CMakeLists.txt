@@ -5,7 +5,7 @@ set(TARGET_NAME foobar)
 # you're feeling lazy, but it's considered better practice to list all of your
 # source files explicitly like so:
 #
-# file(SRC_FILES foo.cpp
+# set(SRC_FILES foo.cpp
 #                bar.cpp
 # )
 file(GLOB SRC_FILES *.cpp)
